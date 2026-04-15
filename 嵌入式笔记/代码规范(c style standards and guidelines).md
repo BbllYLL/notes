@@ -1,3 +1,5 @@
+#  本规范来自[C Style](https://syque.com/cstyle/)
+
 # 1. 文件命名
 ## 1.1 总述
 
