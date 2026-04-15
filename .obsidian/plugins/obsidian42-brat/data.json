@@ -1,0 +1,24 @@
+{
+  "pluginList": [
+    "Bowen-0x00/obsidian-excalidraw-plugin-ymjr"
+  ],
+  "pluginSubListFrozenVersion": [
+    {
+      "repo": "Bowen-0x00/obsidian-excalidraw-plugin-ymjr",
+      "version": "latest"
+    }
+  ],
+  "themesList": [],
+  "updateAtStartup": true,
+  "updateThemesAtStartup": true,
+  "enableAfterInstall": true,
+  "loggingEnabled": false,
+  "loggingPath": "BRAT-log",
+  "loggingVerboseEnabled": false,
+  "debuggingMode": false,
+  "notificationsEnabled": true,
+  "globalTokenName": "brat",
+  "personalAccessToken": "",
+  "selectLatestPluginVersionByDefault": false,
+  "allowIncompatiblePlugins": false
+}
