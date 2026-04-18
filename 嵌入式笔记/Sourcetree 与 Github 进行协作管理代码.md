@@ -30,3 +30,40 @@ cat ~/.ssh/id_rsa.pub
 
 # SourceTree 界面功能介绍（TODO）
 
+| 类型       | 描述                        |
+| -------- | ------------------------- |
+| build    | 发布版本                      |
+| chore    | 构建过程或辅助工具的变动              |
+| ci       | 持续集成修改                    |
+| docs     | 文档修改                      |
+| feat     | 新功能（feature）              |
+| fix      | 修复bug                     |
+| merge    | 代码合并                      |
+| perf     | 优化相关，比如提升性能、体验            |
+| refactor | 重构（即不是新增功能，也不是修改bug的代码变动） |
+| revert   | 回滚到上一个版本                  |
+| style    | 代码格式修改                    |
+| test     | 增加测试（代码测试，不是测试平台的测试用例）    |
+
+scope(可选)
+
+scope用于说明 commit 影响的范围，比如数据层、控制层、视图层等等，视项目不同而不同。
+
+例如在Angular，可以是location，browser，compile，rootScope， ngHref，ngClick，ngView等。如果你的修改影响了不止一个scope，你可以使用*代替。
+
+subject(必须)
+
+subject是commit目的的简短描述，不超过50个字符，切忌模糊、意义不明的描述。
+
+特定测试用例的描述，以_开头，例如BP_101000-修改xxxxx
+
+例子
+```
+fix(DAO): 用户查询缺少username属性
+
+feat(Controller): 用户查询接口开发
+
+perf: 优化大文件日志解析
+
+refactor: BP_101000-重构xxx测试逻辑
+```
