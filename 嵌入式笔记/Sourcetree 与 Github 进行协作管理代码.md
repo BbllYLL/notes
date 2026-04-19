@@ -13,6 +13,7 @@ ssh-keygen.exe
 执行命令后，一路按下回车
 
 完成 ssh-key 的生成操作，记住ssh-key的存放位置：c:/Users/xxx/.ssh/id_rsa
+![Pasted_20260419112706_Sourcetree 与 Github 进行协作管理代码](Sourcetree%20%E4%B8%8E%20Github%20%E8%BF%9B%E8%A1%8C%E5%8D%8F%E4%BD%9C%E7%AE%A1%E7%90%86%E4%BB%A3%E7%A0%81_assets/Pasted_20260419112706_Sourcetree%20%E4%B8%8E%20Github%20%E8%BF%9B%E8%A1%8C%E5%8D%8F%E4%BD%9C%E7%AE%A1%E7%90%86%E4%BB%A3%E7%A0%81.png)
 
 同时获取ssh-key具体秘钥
 

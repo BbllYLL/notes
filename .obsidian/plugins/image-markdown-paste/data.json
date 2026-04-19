@@ -1,0 +1,7 @@
+{
+  "imageSavePath": "{folderpath}/{filename}_assets",
+  "useStandardMarkdown": true,
+  "autoRenameOnConflict": true,
+  "enableRenameSync": true,
+  "enableMoveSync": true
+}
