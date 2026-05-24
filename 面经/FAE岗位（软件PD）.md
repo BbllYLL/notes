@@ -28,3 +28,5 @@ O2Micro(凹凸 )
 [USB Power Delivery | USB-IF](https://www.usb.org/document-library/usb-power-delivery)
 官网文档
 
+[专为USB Type-C及功率传输而设的STM32解决方案 - 意法半导体](https://www.st.com.cn/content/st_com/zh/ecosystems/stm32-usb-c.html)
+
