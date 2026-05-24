@@ -22,3 +22,5 @@ O2Micro(凹凸 )
 
 # PD协议简介（USB Power Delivery）
 
+[USB Power Delivery | USB-IF](https://www.usb.org/document-library/usb-power-delivery)
+官网文档
