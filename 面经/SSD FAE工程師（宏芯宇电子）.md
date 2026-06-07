@@ -5,5 +5,19 @@
 # 存储行业
 
 
-# SSD硬盘相关知识
+# 存储相关知识
 
+主要分为两类ROM RAM 
+## ROM（Read Only Memory）
+一开始就代表着只读存储器，但是现在我们生活上的手机或者电脑的硬盘当作ROM，但是现在的ROM不仅仅是只读的，还可以进行反复编程，这是为什么呢？
+### 发展历程
+BIOS（Basic Input Output System）电脑启动运行的第一个固件 只读不写
+PROM（Programmable ROM）可编程只读存储器 写入程序后就不可更改
+EPROM（Rrasable Programmable ROM）可抹除可编程只读存储器 需要紫外线进行擦除
+EEPROM（Electrically Rrasable Programmable ROM）电可抹除可编程只读存储器
+### Flash
+Nor Flash
+
+Nand Flash
+
+## RAM（Random Access Memory）
