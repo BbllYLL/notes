@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>&#x3010;&#x8003;&#x5bdf;&#x70b9;&#x3011;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <span id="markdown-mermaid" aria-hidden="true" data-config="{&quot;darkModeTheme&quot;:&quot;dark&quot;,&quot;lightModeTheme&quot;:&quot;default&quot;,&quot;maxTextSize&quot;:50000,&quot;clickDrag&quot;:&quot;alt&quot;,&quot;showControls&quot;:&quot;onHoverOrFocus&quot;,&quot;resizable&quot;:true,&quot;maxHeight&quot;:&quot;&quot;}"></span>
+				<h2 id="考察点">【考察点】</h2>
+<h2 id="答题思路">【答题思路】</h2>
+<h2 id="示范回答">【示范回答】</h2>
+<h2 id="加分点">【加分点】</h2>
+<h1 id="说一下-constvolatilestatic-的作用和典型使用场景">说一下 const、volatile、static 的作用和典型使用场景？</h1>
+<h2 id="考察点-1">【考察点】</h2>
+<pre><code>C 关键字理解 
+嵌入式中对寄存器、共享变量、模块封装的掌握
+</code></pre>
+<h2 id="答题思路-1">【答题思路】</h2>
+<pre><code>先分别定义这三个关键字
+再结合嵌入式场景给出例子
+</code></pre>
+<h2 id="示范回答-1">【示范回答】</h2>
+<p>const 表示“只读”，通过这个标识符不能修改变量的值。嵌入式中常用来修饰：
+查表数据、配置参数，防止误修改；
+函数参数，表达“我不会在函数内改这个参数”。</p>
+<p>volatile 告诉编译器，这个变量的值可能会在程序之外被改变，比如被 中断或者硬件修改，所以每次使用都必须从内存重新读取，不能用寄存器 缓存。典型场景有：
+中断与主程序之间共享的标志位；
+映射硬件寄存器的指针。</p>
+<p>static 主要有两个作用：
+修饰局部变量时延长生命周期到整个程序运行期，适合计数器、状态机变量；
+修饰全局变量和函数时，把作用域限制在当前源文件，实现模块内封装。</p>
+<p>在嵌入式项目中，这三个关键字用得非常多，不仅影响程序行为，也关系 到可读性和可维护性。</p>
+<h2 id="加分点-1">【加分点】</h2>
+<pre><code>能举出 volatile uint32_t * const p = (uint32_t *)0xXXXX; 这类寄存器指针例子
+能说出 const 影响的是“通过这个名字不能改”，但底层内容可能还是会变（比如被硬件改）
+</code></pre>
+<h1 id="数组和指针有什么区别在嵌入式中要注意什么">数组和指针有什么区别？在嵌入式中要注意什么？</h1>
+<h2 id="考察点-2">【考察点】</h2>
+<pre><code>数组与指针本质差异 
+对 sizeof、内存布局的理解
+</code></pre>
+<h2 id="答题思路-2">【答题思路】</h2>
+<pre><code>先讲概念差异，再讲使用上的坑
+</code></pre>
+<h2 id="示范回答-2">【示范回答】</h2>
+<h2 id="加分点-2">【加分点】</h2>
+
+            
+            
+        </body>
+        </html>
